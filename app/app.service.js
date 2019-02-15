@@ -2,9 +2,9 @@
 function ProfileService ($location) {
     const self = this;
     self.userDocs = {
-        name: "Stuart",
-        email: "bristol.stuart@gmail.com",
-        bio: "suuuuuup"
+        name: "Grant Chirpus",
+        email: "chirpus@gc.com",
+        bio: "code-a-doodle-do motherclucker"
     }
     self.getUserProfile = () => {
         return self.userDocs;

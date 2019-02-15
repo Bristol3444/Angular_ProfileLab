@@ -1,14 +1,15 @@
 "use strict"
 const editprofile = {
     template: `
+      <p class="explain">Use the form below to update your profile.</p>
       <form ng-submit="$ctrl.getProf($ctrl.userDocs)">
-      <p>Name</p>
+      <p class="form-directive">Name</p>
       <input type="text" placeholder="Stuart" ng-model="$ctrl.userDocs.name">
-      <p>Email</p>
+      <p class="form-directive">Email</p>
       <input type="text" placeholder="a.s@gmail.com" ng-model="$ctrl.userDocs.email">
-      <p>Bio</p>
-      <input type="text" placeholder="Hello Hello" ng-model="$ctrl.userDocs.bio">
-      <button>submit changes</button>
+      <p class="form-directive">Bio</p>
+      <input type="text" placeholder="Hello Hello" rows="7" ng-model="$ctrl.userDocs.bio">
+      <button class="submit-btn">submit changes</button>
       </form>
     `,
     controller: ["ProfileService", function(ProfileService){

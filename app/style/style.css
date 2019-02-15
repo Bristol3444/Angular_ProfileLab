@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.template {
+    border: 1px solid black;
+    Box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+    height: 400px;
+}
+.form-directive {
+    color: #1ECEFD;
+    font-size: .75em;
+    font-weight: bold;
+    margin-left: 5px;
+}
+input {
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 15px;
+    margin-left: 10px;
+    width: 90%;
+    padding-left: 5px;
+}
+.explain {
+    width:90%;
+    margin-left: 10px;
+}
+.submit-btn, .edit-btn {
+    background-color: #505355;
+    border-radius: 50px;
+    color: white;
+    width: 80%;
+    margin: 30px;
+    height: 20px;
+    text-align: center;
+    
+}
+.profpic {
+    background-image: url("style/chicken.jpg");
+}
