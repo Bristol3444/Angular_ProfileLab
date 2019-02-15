@@ -1,11 +1,15 @@
 "use strict";
 const profilepage = {
   template: `
-  <div class="profpic"></div>
-  <p>Name :{{$ctrl.userDocs.name}}</p>
-  <p>Email :{{$ctrl.userDocs.email}}</p>
-  <p>Bio :{{$ctrl.userDocs.bio}}</p>
+  <div class="prof-display"
+    <div id="img-hold"
+      <img src="app/style/chicken.jpg" alt="chicken">
+    </div>
+  <p class="prof-name">{{$ctrl.userDocs.name}}</p>
+  <p class="prof-contact">{{$ctrl.userDocs.email}}</p>
+  <p class="prof-bio">{{$ctrl.userDocs.bio}}</p>
   <button class="edit-btn" ng-click="$ctrl.pullEditPage()">Edit</button>
+  </div
   `,
   controller: ["ProfileService", function(ProfileService){
       const vm  = this;
